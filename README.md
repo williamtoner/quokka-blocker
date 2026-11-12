@@ -2,6 +2,10 @@
 
 A browser extension that replaces web adverts with beautiful photographs and short films of quokkas, otters, red pandas and their friends.
 
+**Website, live demo and download: <https://williamtoner.net/quokka-blocker/>**
+
+![Quokka Blocker on ITmedia NEWS](docs/live-itmedia.png)
+
 It does not stop ads from loading. It covers the spaces they were given, so pages keep the layout their designers intended (no collapsed gaps, no jumping text) and it needs no filter lists.
 
 ## Try it
