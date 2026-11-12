@@ -1,6 +1,6 @@
 # Chrome Web Store listing
 
-Everything to paste into the [developer dashboard](https://chrome.google.com/webstore/devconsole), field by field. Images are in this folder; they are rebuilt by `tools/make_store_assets.py`. The package is `dist/quokka-blocker-chrome.zip` (from `python3 tools/build.py`), the same file the website offers.
+Everything to paste into the [developer dashboard](https://chrome.google.com/webstore/devconsole), field by field. The texts' source is `fields.json`; the site turns it into an unlisted page with a Copy button per field, <https://williamtoner.net/quokka-blocker/store/>, and a download with the package and every image. `FLYINGFISH_TASK.md` is the same submission written as a task for the FlyingFish computer-use app. Images are in this folder; they are rebuilt by `tools/make_store_assets.py`. The package is `dist/quokka-blocker-chrome.zip` (from `python3 tools/build.py`), the same file the website offers.
 
 ## Package
 

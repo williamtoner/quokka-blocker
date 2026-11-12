@@ -1,0 +1,19 @@
+{
+  "name": "Quokka Blocker",
+  "summary": "Replaces web adverts with beautiful photographs and films of quokkas, otters, red pandas and friends.",
+  "description": "Every ad, now an animal.\n\nQuokka Blocker replaces the adverts on the web with photographs and short films of quokkas, otters, red pandas and their friends. Each one is fitted to the space the advert was given, so pages keep their layout: no gaps, no jumping text, just something lovely where an advert used to be.\n\n• 190 hand-picked pictures of 41 kinds of animal, from snow monkeys and shima-enaga to capybaras, sea otters and, of course, quokkas.\n• Every picture is marked with where its animal is, so a crop never cuts off a face. Long banners become filmstrips; tall columns stack up.\n• Now and then a short, silent film plays instead: a red fox kit at its den, a puffin on a misty cliff. Films only play while on screen, and you can switch them off.\n• Hover any animal to see what it is, where it was photographed and who took the picture. Ask for another, or put the original advert back.\n• Choose your animals in the toolbar popup, pause Quokka Blocker on any site, or go all in with \"Quokkas only\".\n\nPrivate by design. Every photo and film ships inside the extension. Quokka Blocker makes no network requests of its own, collects no data, and has no accounts, tracking or ads. Your count of ads turned into animals stays in your browser.\n\nEvery picture is shared under an open licence (Creative Commons or public domain) by the photographer credited beside it, on Wikimedia Commons or Flickr. Full credits are in the extension.\n\nOpen source: https://github.com/williamtoner/quokka-blocker\nWebsite: https://williamtoner.net/quokka-blocker/",
+  "category": "Fun",
+  "language": "English",
+  "homepage": "https://williamtoner.net/quokka-blocker/",
+  "support": "https://github.com/williamtoner/quokka-blocker/issues",
+  "privacy_policy": "https://williamtoner.net/quokka-blocker/privacy.html",
+  "single_purpose": "Quokka Blocker has one purpose: where a web page shows an advert, it shows a photograph or short film of an animal instead, sized to the advert's space. Everything it shows is bundled with the extension.",
+  "justify_storage": "Saves the user's settings (on/off, sites where it is paused, films on or off, which animals to show) and a count of how many adverts it has replaced, in the browser only.",
+  "justify_activeTab": "Lets the toolbar popup read the current tab's address so the user can pause Quokka Blocker on that site with one switch.",
+  "justify_host": "Adverts appear on any website, so the content script runs on every page to find the containers the major ad networks render into and cover each one with a bundled animal photograph. It reads no page content beyond the size and position of those ad containers, and sends nothing anywhere.",
+  "remote_code": "No, I am not using remote code.",
+  "reviewer_notes": "Quokka Blocker does not block network requests; it covers advert containers (Google Publisher Tag and AdSense slots, Amazon, Criteo, Taboola, Outbrain and similar, matched by element id or frame source) with locally bundled images. To see it working, open https://williamtoner.net/quokka-blocker/test/, a test page full of fake adverts in common sizes. Source: https://github.com/williamtoner/quokka-blocker",
+  "screenshots": ["1-page.png", "2-before-after.png", "3-hover.png", "4-popup.png", "5-welcome.png"],
+  "promo_small": "promo-440x280.png",
+  "promo_marquee": "marquee-1400x560.png"
+}
