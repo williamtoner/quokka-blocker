@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quokka Blocker: every ad, now an animal</title>
+  <meta name="description" content="A browser extension that replaces web adverts with beautiful photographs and films of quokkas, otters, red pandas and friends.">
+  <meta property="og:title" content="Quokka Blocker">
+  <meta property="og:description" content="Every ad, now an animal. A free browser extension that swaps adverts for photographs and films of quokkas, otters, red pandas and friends.">
+  <meta property="og:image" content="og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="qb/icon128.png">
+  <link rel="stylesheet" href="qb/theme.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#"><span class="mark" data-mark></span>Quokka Blocker</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#animals">The animals</a>
+      <a class="btn small" href="#install">Install</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">A browser extension · Free · Open source</p>
+      <h1>Every ad,<br><span>now an animal.</span></h1>
+      <p class="lede">Quokka Blocker swaps the adverts on the web for photographs and short films of quokkas, otters, red pandas and their friends: fitted to every space, faces never cropped, quietly lovely.</p>
+      <div class="cta">
+        <a class="btn" href="#install" data-install>Add to your browser</a>
+        <a class="btn ghost" href="#demo">See it work</a>
+      </div>
+    </div>
+    <div class="hero-shot" id="hero-mosaic" aria-hidden="true"></div>
+  </section>
+
+  <section class="demo" id="demo">
+    <div class="demo-head">
+      <h2>Same page. Better company.</h2>
+      <div class="seg big" role="group" aria-label="Show the page with">
+        <button data-mode="ads" aria-pressed="false">Ads</button>
+        <button data-mode="animals" aria-pressed="true">Animals</button>
+      </div>
+    </div>
+    <div class="browser">
+      <div class="chrome"><i></i><i></i><i></i><span>dailyherald.example/news/town-council</span></div>
+      <div class="page-mock">
+        <div class="slot" data-w="0" data-h="90" data-ad="LIMITED OFFER"></div>
+        <div class="cols">
+          <div class="article">
+            <div class="kicker"></div>
+            <div class="t"></div><div class="t short"></div>
+            <div class="p"></div><div class="p"></div><div class="p s"></div>
+            <div class="slot" data-w="0" data-h="250" data-ad="YOU WON!"></div>
+            <div class="p"></div><div class="p"></div><div class="p s"></div>
+          </div>
+          <div class="side">
+            <div class="slot" data-w="300" data-h="250" data-ad="50% OFF"></div>
+            <div class="slot" data-w="300" data-h="600" data-ad="ACT NOW"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="demo-note">This is the real extension's renderer and photo library, running in your browser. Hover an animal.</p>
+  </section>
+
+  <section class="features" id="how">
+    <div class="feature">
+      <div class="ficon">◳</div>
+      <h3>Fits every space</h3>
+      <p>Every picture is marked with where its animal is, so a crop never loses a face. Long banners become filmstrips; tall towers stack up.</p>
+    </div>
+    <div class="feature">
+      <div class="ficon">◐</div>
+      <h3>Swaps before you see</h3>
+      <p>Ad spaces are spotted as the page builds, usually before the advert inside has loaded. No flashes, no jumping text, no gaps.</p>
+    </div>
+    <div class="feature">
+      <div class="ficon">❖</div>
+      <h3>Your animals</h3>
+      <p>Choose who you meet, from capybaras to snow monkeys, or go all in with <em>Quokkas only</em>. Short silent films appear now and then; switch them off any time.</p>
+    </div>
+    <div class="feature">
+      <div class="ficon">◎</div>
+      <h3>Nothing leaves your browser</h3>
+      <p>No accounts, no tracking, no servers. Every photo ships inside the extension. Pause it on any site, or bring back any ad with a click.</p>
+    </div>
+  </section>
+
+  <section class="animals" id="animals">
+    <div class="animals-head">
+      <h2><span id="n-pictures">Hundreds of</span> pictures. <span id="n-animals">Dozens of</span> animals.</h2>
+      <p>Chosen one by one from the work of wildlife photographers who share their pictures openly. Every one is credited, on hover and in full.</p>
+    </div>
+    <div class="marquee" id="marquee"><div class="track"></div></div>
+  </section>
+
+  <section class="install" id="install">
+    <h2>Install Quokka Blocker</h2>
+    <div class="install-grid">
+      <div class="how">
+        <h3>Chrome, Edge, Brave, Arc</h3>
+        <ol>
+          <li><a class="btn small" href="quokka-blocker-chrome.zip" download>Download for Chrome</a> and unzip it.</li>
+          <li>Open <code>chrome://extensions</code> and switch on <strong>Developer mode</strong> (top right).</li>
+          <li>Click <strong>Load unpacked</strong> and choose the unzipped folder.</li>
+        </ol>
+      </div>
+      <div class="how">
+        <h3>Firefox</h3>
+        <ol>
+          <li><a class="btn small" href="quokka-blocker-firefox.zip" download>Download for Firefox</a>.</li>
+          <li>Open <code>about:debugging#/runtime/this-firefox</code>.</li>
+          <li>Click <strong>Load Temporary Add-on…</strong> and choose the zip.</li>
+        </ol>
+        <p class="small-print">Until Mozilla signs it, Firefox forgets temporary add-ons when it restarts.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="brand"><span class="mark" data-mark></span>Quokka Blocker</div>
+    <p>Photographs and films by the photographers credited in the extension, under Creative Commons licences. Quokka Blocker is not affiliated with any of them. Open source under the MIT licence.</p>
+    <p><a href="https://github.com/williamtoner/quokka-blocker">Source on GitHub</a> · <a href="credits.html">Photo credits</a></p>
+  </footer>
+
+  <script src="qb/library.js"></script>
+  <script src="qb/pick.js"></script>
+  <script src="qb/card.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

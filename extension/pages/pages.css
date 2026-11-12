@@ -1,0 +1,67 @@
+/* The extension's own pages: welcome and credits. */
+.page { max-width: 1120px; margin: 0 auto; padding: 0 28px 80px; }
+.bar { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 560 20px/1 var(--serif); letter-spacing: -.01em; text-decoration: none; }
+.brand .mark { width: 28px; height: 28px; color: var(--green); }
+.bar nav { display: flex; gap: 22px; font-size: 14px; }
+.bar nav a { color: var(--ink-2); text-decoration: none; }
+.bar nav a:hover { color: var(--ink); }
+
+h1 {
+  font: 480 clamp(40px, 6vw, 76px)/1.02 var(--serif); letter-spacing: -.03em;
+  font-variation-settings: "opsz" 144; text-wrap: balance;
+}
+h1 em { font-style: italic; font-weight: 400; color: var(--green); }
+h2 { font: 500 30px/1.15 var(--serif); letter-spacing: -.02em; font-variation-settings: "opsz" 72; }
+h3 { font: 600 15px/1.3 var(--sans); }
+.lede { margin-top: 18px; max-width: 34em; font-size: 18px; line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
+.eyebrow { font-size: 12.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+
+/* Welcome */
+.welcome-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: center; padding: 48px 0 72px; }
+.status { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 22px; padding: 6px 12px 6px 9px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: 13px; font-weight: 600; }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px color-mix(in srgb, var(--green) 22%, transparent); }
+
+.specimen {
+  position: relative; border-radius: 18px; background: var(--raised); box-shadow: var(--shadow);
+  padding: 22px; display: grid; grid-template-columns: 1fr 160px; gap: 18px; overflow: hidden;
+}
+.specimen .lines { display: flex; flex-direction: column; gap: 9px; }
+.specimen .l { height: 9px; border-radius: 5px; background: var(--line-2); }
+.specimen .l.h { height: 16px; width: 70%; background: var(--line); margin-bottom: 6px; }
+.slot { position: relative; border-radius: 6px; overflow: hidden; background: var(--line-2); }
+.slot quokka-blocker { border-radius: 6px; }
+.specimen .leader { grid-column: 1 / -1; }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding: 40px 0; border-top: 1px solid var(--line); }
+.steps p { margin-top: 8px; color: var(--ink-2); font-size: 14.5px; line-height: 1.6; }
+.num { font: 500 15px/1 var(--serif); color: var(--green); margin-bottom: 14px; }
+
+.pin { display: flex; gap: 22px; align-items: center; margin-top: 16px; padding: 22px 24px; border-radius: 16px; background: var(--green-soft); }
+.pin .mark { width: 36px; height: 36px; color: var(--green); flex: none; }
+.pin p { color: var(--ink-2); font-size: 14.5px; }
+.pin strong { color: var(--ink); font-weight: 600; }
+
+/* Credits */
+.credits-head { padding: 40px 0 28px; }
+.credits-head p { margin-top: 12px; max-width: 40em; color: var(--ink-2); }
+.animal { padding: 30px 0 8px; border-top: 1px solid var(--line); }
+.animal h2 { font-size: 24px; margin-bottom: 16px; }
+.animal h2 small { font: 500 13px var(--sans); color: var(--ink-3); margin-left: 8px; letter-spacing: 0; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 22px 18px; }
+.shot figure { position: relative; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; background: var(--line-2); }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot .film { position: absolute; left: 8px; top: 8px; padding: 3px 8px; border-radius: 999px; background: rgba(20, 16, 13, .55); color: #fff; font-size: 11px; font-weight: 600; backdrop-filter: blur(8px); }
+.shot .meta { margin-top: 9px; font-size: 13px; line-height: 1.45; }
+.shot .who { font-weight: 550; }
+.shot .meta div { color: var(--ink-2); }
+.shot .meta a { color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--line); }
+.shot .meta a:hover { color: var(--ink); border-color: var(--ink-3); }
+
+.foot { margin-top: 64px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: 13px; display: flex; gap: 18px; flex-wrap: wrap; }
+.foot a { color: var(--ink-2); }
+
+@media (max-width: 820px) {
+  .welcome-hero { grid-template-columns: 1fr; gap: 36px; }
+  .steps { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,4 @@
+tools/media/cache/
+__pycache__/
+dist/
+*.pyc

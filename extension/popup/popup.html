@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quokka Blocker</title>
+  <link rel="stylesheet" href="../pages/theme.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="mark" id="mark"></span><span>Quokka Blocker</span></div>
+    <label class="switch" title="Turn Quokka Blocker on or off everywhere">
+      <input type="checkbox" id="enabled" checked aria-label="Quokka Blocker on">
+      <span></span>
+    </label>
+  </header>
+
+  <section class="hero" id="hero">
+    <img id="hero-img" alt="">
+    <div class="hero-text">
+      <div class="big" id="total">0</div>
+      <div class="sub" id="total-label">ads turned into animals</div>
+    </div>
+    <div class="hero-credit" id="hero-credit"></div>
+  </section>
+  <p class="today" id="today"></p>
+
+  <section class="rows">
+    <div class="row">
+      <div>
+        <div class="label">On <span id="host">this site</span></div>
+        <div class="hint" id="host-hint">Animals instead of ads here</div>
+      </div>
+      <label class="switch"><input type="checkbox" id="site" checked aria-label="On this site"><span></span></label>
+    </div>
+    <div class="row">
+      <div>
+        <div class="label">Moving pictures</div>
+        <div class="hint">Short silent films, now and then</div>
+      </div>
+      <label class="switch"><input type="checkbox" id="motion" checked aria-label="Moving pictures"><span></span></label>
+    </div>
+    <div class="row">
+      <div class="label">Quokkas</div>
+      <div class="seg" id="quokkas" role="group" aria-label="How many quokkas">
+        <button data-v="some" aria-pressed="false">A few</button>
+        <button data-v="lots" aria-pressed="true">Lots</button>
+        <button data-v="only" aria-pressed="false">Only</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="animals" id="animals-section">
+    <div class="animals-head">
+      <div class="label">Animals</div>
+      <div class="hint" id="animals-count"></div>
+    </div>
+    <div class="grid" id="animals"></div>
+  </section>
+
+  <footer class="foot">
+    <a href="../pages/credits.html" target="_blank">Photo credits</a>
+    <a href="../pages/welcome.html" target="_blank">About</a>
+    <span id="version"></span>
+  </footer>
+
+  <script src="../src/library.js"></script>
+  <script src="../src/card.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

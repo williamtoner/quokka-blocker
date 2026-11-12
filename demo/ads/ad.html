@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;height:100%;overflow:hidden;font-family:Arial,Helvetica,sans-serif}
+a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-decoration:none;
+  background:repeating-linear-gradient(45deg,#ff2d55 0 18px,#ff9f0a 18px 36px);color:#fff;text-align:center;padding:8px;box-sizing:border-box}
+b{font-size:clamp(14px,8vmin,46px);font-weight:900;text-shadow:2px 2px 0 #000;letter-spacing:-.02em}
+i{font-style:normal;background:#ffe600;color:#000;font-weight:800;padding:6px 10px;border-radius:4px;font-size:clamp(10px,4vmin,18px)}
+</style></head><body>
+<a href="https://example.com/buy?utm=ad" target="_blank"><b id="t">MEGA SALE 70% OFF</b><i>BUY NOW &rsaquo;</i></a>
+<script>var q=new URLSearchParams(location.search);if(q.get('t'))document.getElementById('t').textContent=q.get('t');</script>
+</body></html>

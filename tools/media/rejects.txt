@@ -1,0 +1,13 @@
+# Pictures left out of the build after review (one Commons/Flickr page per line).
+
+https://commons.wikimedia.org/wiki/File:Japanese_dwarf_flying_squirrel.jpg  # dim, captive, awkward pose
+https://www.flickr.com/photos/89279812@N07/15215726438  # dim; enclosure bars in frame
+https://commons.wikimedia.org/wiki/File:Quokka_near_Caroline_Thomson_Cabins,_July_2026.jpg  # soft and dull; quokkas are shown often, so only strong ones
+https://commons.wikimedia.org/wiki/File:Quokka_and_Joey_at_the_Rottnest_Bakery,_July_2026.jpg  # cornered against a wall on a deck
+https://commons.wikimedia.org/wiki/File:Emperor_penguin,_Coulman_Island,_Antarctica.webm  # emperor tiny in a 4K frame; 7 MB for little gain
+https://commons.wikimedia.org/wiki/File:African_penguins,_Betty%27s_Bay_06.webm  # penguins small among scrub; heavy file
+https://commons.wikimedia.org/wiki/File:Female_panda_and_cub.webm  # soft, low-resolution film
+https://commons.wikimedia.org/wiki/File:Kitten_sleeping_2_2014-08-24.ogv  # soft extreme close-up film
+https://commons.wikimedia.org/wiki/File:Fot._Andrew_Skowron_(33757944628).jpg  # dirty ewe with ear tag
+https://commons.wikimedia.org/wiki/File:Brown-headed_sloth_(23807).jpg  # face barely visible
+https://commons.wikimedia.org/wiki/File:Little_Owl,South_Hebron.webm  # strong magenta colour cast
