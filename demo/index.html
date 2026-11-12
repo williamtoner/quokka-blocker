@@ -101,6 +101,23 @@
 <footer>The Morning Ledger is not a real newspaper.</footer>
 
 <script>
+  // ?clean: the page as a reader would see it, for store screenshots.
+  if (/[?&]clean\b/.test(location.search)) {
+    document.querySelector('.mast p').textContent = 'Local news · Thursday 12 November';
+    var note = document.querySelector('.note');
+    note.parentNode.removeChild(note);
+    var photo = document.querySelector('[data-test=content-image]');
+    photo.src = 'data:image/svg+xml,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">' +
+      '<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fc3d9"/><stop offset="1" stop-color="#e8e2cf"/></linearGradient></defs>' +
+      '<rect width="800" height="300" fill="url(#s)"/>' +
+      '<path d="M0 220 Q200 170 400 205 T800 190 V300 H0Z" fill="#8aa37a"/><path d="M0 250 Q250 215 520 245 T800 235 V300 H0Z" fill="#6f8c62"/>' +
+      '<g fill="#3c4a3a"><path d="M330 150 L400 112 L470 150Z"/><rect x="338" y="150" width="124" height="6"/>' +
+      '<rect x="344" y="156" width="4" height="56"/><rect x="376" y="156" width="4" height="56"/><rect x="420" y="156" width="4" height="56"/><rect x="452" y="156" width="4" height="56"/>' +
+      '<rect x="332" y="212" width="136" height="10"/></g></svg>');
+    photo.alt = 'The bandstand in the park';
+    Array.prototype.forEach.call(document.querySelectorAll('.label'), function (l) { l.textContent = 'Advertisement'; });
+  }
   // An ad slot that has no size until its ad arrives.
   setTimeout(function () {
     var slot = document.getElementById('div-gpt-ad-grow');

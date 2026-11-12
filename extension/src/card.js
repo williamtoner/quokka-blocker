@@ -58,7 +58,7 @@
     '.mark svg{width:15px;height:15px;flex:none;}',
     '.mark span{font-size:11px;font-weight:600;letter-spacing:.01em;white-space:nowrap;max-width:0;overflow:hidden;opacity:0;',
     '  transition:max-width .45s ' + EASE + ',opacity .3s,margin .45s;margin-right:0;}',
-    '.card:hover .mark span{max-width:120px;opacity:1;margin-right:4px;}',
+    '.roomy:hover .mark span{max-width:120px;opacity:1;margin-right:4px;}',
     '.card:hover .mark{background:rgba(22,17,13,.5);opacity:1;}',
 
     // buttons
@@ -168,6 +168,7 @@
     var w = size.width, h = size.height;
     var tileH = choice.dir === 'col' ? choice.tiles[0].h : h;
     if (w < 230 || h < 60) card.classList.add('narrow');
+    if (w >= 420) card.classList.add('roomy'); // room for the name beside the buttons
     if (tileH < 120 || choice.tiles[0].w < 150) card.classList.add('short');
     if (h < 46 || w < 100) card.classList.add('tiny');
     if (motion) card.classList.add('drift');

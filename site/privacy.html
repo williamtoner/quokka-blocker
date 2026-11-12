@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy · Quokka Blocker</title>
+  <link rel="icon" href="qb/icon128.png">
+  <link rel="stylesheet" href="qb/theme.css">
+  <link rel="stylesheet" href="qb/pages.css">
+  <style>
+    .policy { max-width: 680px; padding: 40px 0 20px; }
+    .policy h1 { font-size: clamp(38px, 6vw, 56px); }
+    .policy h2 { font-size: 22px; margin: 36px 0 10px; }
+    .policy p, .policy li { color: var(--ink-2); font-size: 16px; line-height: 1.65; }
+    .policy p + p { margin-top: 12px; }
+    .policy ul { margin: 10px 0 0 20px; }
+    .policy .date { margin-top: 12px; color: var(--ink-3); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="bar">
+      <a class="brand" href="./"><span class="mark" data-mark></span>Quokka Blocker</a>
+      <nav><a href="./">Home</a><a href="credits.html">Photo credits</a></nav>
+    </header>
+    <article class="policy">
+      <div class="eyebrow">Privacy</div>
+      <h1>Nothing leaves your browser.</h1>
+      <p class="date">Last updated 12 November 2026</p>
+
+      <h2>What Quokka Blocker collects</h2>
+      <p>Nothing. Quokka Blocker has no servers, no accounts, no analytics and no tracking, and it does not send any information about you or the pages you visit anywhere.</p>
+
+      <h2>What it keeps on your computer</h2>
+      <p>To work, it stores a few things in your browser's own extension storage. They never leave your computer, and removing the extension deletes them.</p>
+      <ul>
+        <li>Your settings: whether it is on, the sites where you paused it, whether films may play, how many quokkas you like, and which animals you switched off.</li>
+        <li>A count of the adverts it has replaced, in total and today, and which kinds of animal you have met. These are shown in the toolbar popup.</li>
+      </ul>
+
+      <h2>What it reads on web pages</h2>
+      <p>On each page it looks for the containers that the major advertising networks render adverts into, and reads their size and position so it can cover them with a picture of the right shape. It does not read the text of pages, what you type, or your browsing history.</p>
+
+      <h2>Network requests</h2>
+      <p>Every photograph, film and typeface is bundled inside the extension, so Quokka Blocker makes no network requests of its own. The adverts it covers are still loaded by the website, as they would be without it; Quokka Blocker hides them from view rather than blocking them.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Storage</strong>, for the settings and counts above.</li>
+        <li><strong>Active tab</strong>, so the toolbar popup can tell which site you are on when you pause it there.</li>
+        <li><strong>Access to websites</strong>, because adverts can appear on any site.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Questions or concerns: open an issue at <a href="https://github.com/williamtoner/quokka-blocker/issues">github.com/williamtoner/quokka-blocker</a>. The source code is public, so you can check all of this for yourself.</p>
+    </article>
+    <footer class="foot">
+      <a href="./">Quokka Blocker</a>
+      <a href="credits.html">Photo credits</a>
+    </footer>
+  </div>
+  <script src="qb/card.js"></script>
+  <script>Array.prototype.forEach.call(document.querySelectorAll('[data-mark]'), function (m) { m.innerHTML = QB.MARK; });</script>
+</body>
+</html>
